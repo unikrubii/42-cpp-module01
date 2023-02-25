@@ -30,8 +30,8 @@ void Sed::_writeFile ( void ) const {
 }
 
 void Sed::replace( void ) {
-	if ( this->_s1.empty() || this->_s2.empty() ) {
-		std::cerr << RED << "Error: s1 or s2 is empty" << RES << std::endl;
+	if ( this->_s1.empty() ) {
+		std::cerr << RED << "Error: string to replace cannot be empty" << RES << std::endl;
 		exit( 2 );
 	}
 
