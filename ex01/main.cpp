@@ -2,8 +2,7 @@
 
 Zombie* newZombie( std::string name );
 
-int main( void )
-{
+int main( void ) {
 	Zombie *zombies = zombieHorde( 5, "SUS" );
 
 	for (int i = 0; i < 5; i++) {
