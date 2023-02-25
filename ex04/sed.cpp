@@ -40,5 +40,5 @@ void Sed::replace( void ) {
 		this->_content.erase( this->_content.find( this->_s1 ), this->_s1.length() );
 	}
 
-	Sed::_writeFile();
+	_writeFile();
 }

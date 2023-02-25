@@ -9,13 +9,15 @@ class Harl {
 	public:
 		Harl( void );
 		~Harl( void );
-		void complain( std::string level );
+		void complain( int level );
+		void harlFilter( std::string level );
 
 	private:
 		void debug( void );
 		void info( void );
 		void warning( void );
 		void error( void );
+		int _getChoice( std::string level );
 };
 
 #endif
